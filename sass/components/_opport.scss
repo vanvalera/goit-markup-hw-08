@@ -1,0 +1,48 @@
+.opportunity {
+  margin: 0px auto;
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.opportunity > li {
+  max-width: 270px;
+}
+.tittle-opportunity {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-body-color);
+}
+.text-opportunity {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.tittle-section {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-body-color);
+}
+.oppotunity__icon {
+  margin-bottom: 30px;
+  display: flex;
+  width: 270px;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.oppotunity__svg {
+  width: 70px;
+  height: 70px;
+}

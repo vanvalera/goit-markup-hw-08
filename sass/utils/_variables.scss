@@ -1,0 +1,17 @@
+:root {
+  --primary-header-color: #212121;
+  --second-header-color: #757575;
+  --accent-header-color: #2196f3;
+  --primary-body-color: #ffffff;
+  --second-body-color: #212121;
+  --accent-body-color: #2196f3;
+  --primary-footer-color: #ffffff;
+  --second-footer-color: #2f303a;
+  --accent-footer-color: #2196f3;
+  --icons-primary-color: #afb1b8;
+  --main-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+  font-family: 'Roboto', 'Raleway';
+  color: #ffffff;
+}
