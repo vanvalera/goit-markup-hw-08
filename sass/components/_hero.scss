@@ -1,13 +1,35 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
-  height: 600px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/BackgroundFon.jpg');
   background-repeat: no-repeat;
+  @include retina {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/BackgroundFon-mob_2x.jpg');
+  }
+  @include tablet {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/BackgroundFon-tablet.jpg');
+    @include retina {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/BackgroundFon-tablet_2x.jpg');
+    }
+  }
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/BackgroundFon-desktop.jpg');
+    @include retina {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/BackgroundFon-desktop_2x.jpg');
+    }
+  }
 }
 .hero > .conteiner {
   text-align: center;

@@ -1,7 +1,16 @@
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding: 0px 15px;
   margin: 0px auto;
+  @include phone {
+    width: 480px;
+  }
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
 }
 .section {
   padding-top: 94px;
