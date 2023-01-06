@@ -11,6 +11,14 @@
     margin-right: 50px;
   }
 }
+.header-div_nav_list {
+  @include phone {
+    display: none;
+  }
+  @include tablet {
+    display: flex;
+  }
+}
 .header-div__logo {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -51,6 +59,15 @@
 }
 .header-nav {
   margin-left: auto;
+  @include phone {
+    display: none;
+    @include tablet {
+      display: block;
+    }
+    @include desktop {
+      display: flex;
+    }
+  }
 }
 .header-nav__tel {
   display: flex;

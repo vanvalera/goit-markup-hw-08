@@ -26,7 +26,7 @@
       <div class="conteiner header-div">
         <nav class="flex header-div__nav">
           <a href="./index.html" class="header-div__logo"> <span class="web">Web</span>Studio </a>
-          <ul class="list flex">
+          <ul class="list flex header-div_nav_list">
             <li>
               <a href="./index.html" class="header-div__link active">Студія</a>
             </li>
@@ -175,13 +175,37 @@
           <h2 class="team-tittle">Наша команда</h2>
           <ul class="list flex">
             <li class="team-worker">
-              <img
-                srcset="./images/Product-designer.jpg 1x, ./images/Product-designer_2x.jpg 2x"
-                src="./images/Product-designer.jpg"
-                alt="Дизайнер продукту"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/Product-designer.jpg 1x, ./images/Product-designer_2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Product-designer-tablet.jpg    1x,
+                    ./images/Product-designer-tablet_2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  width="354"
+                  height="374"
+                />
+                <source
+                  srcset="
+                    ./images/Product-designer-mob.jpg    1x,
+                    ./images/Product-designer-mob_2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                  width="450"
+                  height="460"
+                />
+                <img
+                  srcset="./images/Product-designer.jpg 1x, ./images/Product-designer_2x.jpg 2x"
+                  src="./images/Product-designer.jpg"
+                  alt="Дизайнер продукту"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team-worker__tittle">Ігор Дем'яненко</h3>
               <p lang="en" class="team-worker__text">Product Designer</p>
               <ul class="flex list">
@@ -212,12 +236,37 @@
               </ul>
             </li>
             <li class="team-worker">
-              <img
-                src="./images/Frontend-developer.jpg"
-                alt="Фронтенд розробник"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/Frontend-developer.jpg 1x, ./images/Frontend-developer_2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Frontend-developer-tablet.jpg    1x,
+                    ./images/Frontend-developer-tablet_2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  width="354"
+                  height="374"
+                />
+                <source
+                  srcset="
+                    ./images/Frontend-developer-mob.jpg    1x,
+                    ./images/Frontend-developer-mob_2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                  width="450"
+                  height="460"
+                />
+                <img
+                  srcset="./images/Frontend-developer.jpg 1x, ./images/Frontend-developer_2x.jpg 2x"
+                  src="./images/Frontend-developer.jpg"
+                  alt="Фронт енд розробник"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team-worker__tittle">Ольга Рєпіна</h3>
               <p lang="en" class="team-worker__text">Frontend Developer</p>
               <ul class="flex list">
@@ -248,12 +297,37 @@
               </ul>
             </li>
             <li class="team-worker">
-              <img
-                src="./images/Marketing-company.jpg"
-                alt="Головний Маркетолог"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/Marketing-company.jpg 1x, ./images/Marketing-company_2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/Marketing-company-tablet.jpg    1x,
+                    ./images/Marketing-company-tablet-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  width="354"
+                  height="374"
+                />
+                <source
+                  srcset="
+                    ./images/Marketing-company-mob.jpg    1x,
+                    ./images/Marketing-company-mob_2x.jpg 2x
+                  "
+                  media="(min-width:480px)"
+                  width="450"
+                  height="460"
+                />
+                <img
+                  srcset="./images/Marketing-company.jpg 1x, ./images/Marketing-company_2x.jpg 2x"
+                  src="./images/Marketing-company.jpg"
+                  alt="Головний маркетолог"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team-worker__tittle">Микола Тарасов</h3>
               <p lang="en" class="team-worker__text">Marketing</p>
               <ul class="flex list our-team-icn">
@@ -284,12 +358,31 @@
               </ul>
             </li>
             <li class="team-worker">
-              <img
-                src="./images/UI-designer.jpg"
-                alt="Дизайнер інтерфейсу"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/UI-designer.jpg 1x, ./images/UI-designer_2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/UI-designer-tablet.jpg 1x, ./images/UI-designer-tablet_2x.jpg 2x"
+                  media="(min-width:768px)"
+                  width="354"
+                  height="374"
+                />
+                <source
+                  srcset="./images/UI-designer-mob.jpg 1x, ./images/UI-designer-mob_2x.jpg 2x"
+                  media="(min-width:480px)"
+                  width="450"
+                  height="460"
+                />
+                <img
+                  srcset="./images/UI-designer.jpg 1x, ./images/UI-designer_2x.jpg 2x"
+                  src="./images/UI-designer.jpg"
+                  alt="Дизайнер інтерфейсу"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <h3 class="team-worker__tittle">Михайло Єрмаков</h3>
               <p lang="en" class="team-worker__text">UI Designer</p>
               <ul class="flex list">

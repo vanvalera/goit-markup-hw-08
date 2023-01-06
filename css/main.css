@@ -94,6 +94,17 @@ img {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 480px) {
+  .header-div_nav_list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-div_nav_list {
+    display: flex;
+  }
+}
+
 .header-div__logo {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -135,6 +146,21 @@ img {
 
 .header-nav {
   margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .header-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .header-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) {
+  .header-nav {
+    display: flex;
+  }
 }
 
 .header-nav__tel {
