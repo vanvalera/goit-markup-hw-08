@@ -1,17 +1,29 @@
-@import './utils/variables';
-@import './utils/mixins';
+// utils
+@import './utils/vars';
+@import './utils/placeholder';
+@import './utils/mixin';
+@import './utils/vs';
+
+// Base
 @import './base/reset';
-@import './components/contain';
-@import './components/header';
-@import './components/hero';
-@import './components/opport';
-@import './components/what-do';
-@import './components/our-team';
-@import './components/our-clients';
-@import './components/footer';
-@import './components/body-portfolio';
-@import './components/animation';
+@import './base/common';
+@import './base/container';
+
+// Components
+@import './components/logo';
+@import './components/button';
+@import './components/img';
+@import './components/subscribe-form';
+@import './components/backdrop';
 @import './components/modal-window';
-@import './components/forms';
-@import './components/forms-footer';
-@import './components/header-menu-open_mob';
+@import './components/modal-form';
+
+// Layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/product';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio';
+@import './layout/footer';
