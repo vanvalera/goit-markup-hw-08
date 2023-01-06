@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -11,6 +11,12 @@
   &:hover {
     fill: #2196f3;
     border: 1px solid #2196f3;
+  }
+  @include tablet {
+    width: 226px;
+  }
+  @include desktop {
+    width: 170px;
   }
 }
 
@@ -29,4 +35,14 @@
 }
 .regular-customers:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 0px;
+  }
+}
+.tittle-clients_mob {
+  @include phone {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
