@@ -22,7 +22,7 @@ img {
   @include phone {
     display: block;
   }
-  @include desktop {
+  @include tablet {
     display: flex;
   }
 }

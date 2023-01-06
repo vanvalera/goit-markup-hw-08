@@ -46,7 +46,7 @@ img {
     display: block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .flex {
     display: flex;
   }
@@ -472,13 +472,29 @@ img {
 }
 
 .basement__logo {
+  display: block;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 28px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primary-footer-color);
   text-decoration: none;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .basement__logo {
+    text-align: center;
+    margin-left: 55px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .basement__logo {
+    margin-left: 0px;
+    text-align: left;
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .adress-style__link {
@@ -512,19 +528,38 @@ img {
 }
 
 .adress-style {
+  text-align: center;
   padding-top: 20px;
   font-style: inherit;
 }
 .adress-style:not(:last-child) {
   margin-bottom: 9px;
 }
+@media screen and (min-width: 1200px) {
+  .adress-style {
+    text-align: unset;
+  }
+}
 
 .footer-social {
-  margin-top: 10px;
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-top: 10px;
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-top: 10px;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__tittle {
+  text-align: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -532,6 +567,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social__tittle {
+    text-align: unset;
+  }
 }
 
 .Developer__borders {
@@ -542,6 +582,11 @@ img {
 }
 .Developer__borders:hover, .Developer__borders:focus {
   background-color: #2196f3;
+}
+
+.footer-social_list {
+  display: flex;
+  justify-content: center;
 }
 
 .button-portfolio__list {
@@ -912,7 +957,7 @@ textarea {
 }
 
 .form-input-foot {
-  width: 358px;
+  width: 450px;
   margin-right: 12px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -924,10 +969,17 @@ textarea {
   transition: var(--main-transition);
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 1200px) {
+  .form-input-foot {
+    width: 358px;
+  }
+}
 
 .form-label-foot {
+  text-align: center;
   display: block;
   margin-bottom: 20px;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -935,12 +987,33 @@ textarea {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .form-label-foot {
+    text-align: unset;
+    margin-top: 0px;
+  }
+}
 
 .footer-form {
-  margin-left: 93px;
+  margin-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer-form {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-top: 0px;
+    margin-left: 93px;
+  }
 }
 
 .button-foot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -955,6 +1028,13 @@ textarea {
   text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .button-foot {
+    display: flex;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 
 .join-foot-icon {
